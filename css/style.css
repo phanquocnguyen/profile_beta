@@ -30,7 +30,7 @@ body{
     font-size: 40px;
     font-weight: 400;
     letter-spacing: 1.2;
-    margin-left: -130px; /* Dịch sang phải 100px */
+    text-align: center; /* Dịch sang phải 100px */
 }
 h1 {
     font-size: 3em;
@@ -38,15 +38,24 @@ h1 {
     text-align: center;
 }
 .profile-main {
-    background: url(https://i.pinimg.com/736x/19/8f/6b/198f6bb9d46be6cff408d871e2eed2ce.jpg) no-repeat center center;
+    background: url(https://i.pinimg.com/736x/19/8f/6b/198f6bb9d46be6cff408d871e2eed2ce.jpg) no-repeat 0px 0px;
     background-size: cover;
-    width: 50%; /* Mặc định cho màn hình lớn */
-    max-width: 500px; /* Đặt giới hạn chiều rộng tối đa */
-    min-height: 300px; /* Đảm bảo chiều cao tối thiểu */
+    width: 45%;
     margin: 20px auto;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+    position: relative;
+    right: 80px; /* Dịch sang phải 100px */
+    float: left;
+    width: 50%;    
+}
+@media (max-width: 768px) {
+    .profile-main {
+        width: 100%; /* Đảm bảo container chiếm đủ chiều rộng */
+        right: 0; /* Loại bỏ dịch chuyển không cần thiết */
+        float: none; /* Tắt float để tránh lỗi */
+    }
 }
 .profile-pic {
     margin: 0 0 1em 0;
@@ -286,17 +295,6 @@ h1 {
 	}
     
 }
-@media (max-width: 768px) {
-    .profile-main {
-        width: 90%; 
-        padding: 20px; 
-        margin: 20px auto; 
-        float: none;
-        position: static;
-        right: auto; 
-    }
-}
-
 /* Định dạng container chính */
 .social {
     text-align: center;
