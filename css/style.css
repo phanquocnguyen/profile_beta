@@ -38,17 +38,13 @@ h1 {
     text-align: center;
 }
 .profile-main {
-    background: url(https://i.pinimg.com/736x/73/01/db/7301dbb9baf991bd052d12a1948da9ec.jpg) no-repeat 0px 0px;
-    background-size: cover;
+    background: url(../images/1.jpg) no-repeat 0px 0px;
+	background-size:cover;
     width: 45%;
     margin: 20px auto;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
-    position: relative;
-    right: 80px; /* Dịch sang phải 100px */
-    float: left;
-    width: 50%;    
+    border-radius: 4px;
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
 }
 @media (max-width: 768px) {
     .profile-main {
