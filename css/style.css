@@ -30,7 +30,7 @@ body{
     font-size: 40px;
     font-weight: 400;
     letter-spacing: 1.2;
-    text-align: center; /* Dịch sang phải 100px */
+    text-align: center; 
 }
 h1 {
     font-size: 3em;
@@ -46,9 +46,10 @@ h1 {
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
     position: relative;
-    right: 80px; /* Dịch sang phải 100px */
+    right: 80px; 
     float: left;
-    width: 50%;    
+    width: 50%;   
+    height: 1050px;
 }
 @media (max-width: 768px) {
     .profile-main {
@@ -112,16 +113,20 @@ h1 {
     background: rgb(245, 245, 245);
     border-radius: 10px;
 }
-.w3-message h5,.w3ls-touch h5{
+.w3-message h5 {
 	color:#474544;
 	font-size:1.5em;
 	margin:0;
 }
+.w3ls-touch h5 {
+        color:#333;
+        font-size:1.5em;
+        margin:0;
+    }
+
 .w3-message p{
 	color:#050e0c; /* đổi màu chữ*/
 	font-size:16px;
-	margin:1em 0 0 0;
-	line-height:1.8em;
 }
 
 .w3ls-touch{
@@ -227,7 +232,6 @@ h1 {
 	color:#212121;
 }
 
-
 .btn-container {
     display: flex;
     justify-content: space-between;
@@ -267,7 +271,6 @@ h1 {
 		width: 100%;
 	}
 }
-
 @media(max-width:600px){
 	.profile-main {
 		background: url(../images/1.png) no-repeat -100px 0px;
@@ -277,8 +280,6 @@ h1 {
 		font-size: 13px;
 	}
 }
-
-
 @media(max-width:320px){
 	h1 {
 		font-size: 1.5em;
@@ -487,6 +488,8 @@ h1 {
 }
 
 /*--Thời Gian Biểu--*/
+
+/*--Iframe spotify--*/
 .spotify-container {
     background-color: whitesmoke;
     background-size: cover;
@@ -504,6 +507,30 @@ h1 {
     text-align: center;
     padding: 10px;
 }
+/*--Iframe spotify--*/
 
+/*--Food Tour--*/
+.iframe {
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.iframe-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px; 
+    text-align: center;
+    padding: 20px;
+}
 
-
+/* CSS chung cho iframe */
+.iframe-container iframe {
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Hiệu ứng mờ dần và phóng to nhẹ */
+    opacity: 0.9 /* Trạng thái bình thường, mờ nhẹ */
+}
+.iframe-container iframe:hover {
+    opacity: 1; /* Hiện rõ khi hover */
+    transform: scale(1.05); /* Phóng to nhẹ */
+}
+/*--Food Tour--*/
