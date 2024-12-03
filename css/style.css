@@ -16,8 +16,9 @@ img {
 /*end reset*/
 body{
 	padding: 30px;
-    background:  #aab39c; /* màu nền background*/
-    background-size: cover;
+    background-color:#aab39c; /* màu nền background*/
+    background-size: contain;
+    background-attachment: fixed;
    font-family: 'Raleway', sans-serif;
 }
 
@@ -30,8 +31,10 @@ body{
     font-size: 40px;
     font-weight: 400;
     letter-spacing: 1.2;
-    text-align: center; 
+    text-align: center;
+    font-family: 'Phudu', sans-serif;
 }
+
 h1 {
     font-size: 3em;
     color: #fff;
@@ -534,3 +537,6 @@ h1 {
     transform: scale(1.05); /* Phóng to nhẹ */
 }
 /*--Food Tour--*/
+
+/*--Snow--*/
+
