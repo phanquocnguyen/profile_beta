@@ -13,10 +13,9 @@ img {
 	width:150px;
 	height:150px;
 }
-/*end reset*/
 body{
 	padding: 30px;
-    background-color:#aab39c; /* màu nền background*/
+    background-color:#aab39c; 
     background-size: contain;
     background-attachment: fixed;
    font-family: 'Raleway', sans-serif;
@@ -56,9 +55,9 @@ h1 {
 }
 @media (max-width: 768px) {
     .profile-main {
-        width: 100%; /* Đảm bảo container chiếm đủ chiều rộng */
-        right: 0; /* Loại bỏ dịch chuyển không cần thiết */
-        float: none; /* Tắt float để tránh lỗi */
+        width: 100%; 
+        right: 0; 
+        float: none; 
     }
 }
 .profile-pic {
@@ -128,7 +127,7 @@ h1 {
     }
 
 .w3-message p{
-	color:#050e0c; /* đổi màu chữ*/
+	color:#050e0c; 
 	font-size:16px;
 }
 
@@ -218,7 +217,11 @@ h1 {
     font-weight: 400;
     display: inline-block;
 }
-
+.highlight-blue {
+    background-color: lightblue; 
+    color: black;
+    padding: 0 2px; 
+} 
 .wthree_footer_copy{
 	text-align:center;
 }
@@ -234,7 +237,15 @@ h1 {
 .wthree_footer_copy p a:hover{
 	color:#212121;
 }
-
+.wthree_footer_copy {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color:#04AA6D;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
 .btn-container {
     display: flex;
     justify-content: space-between;
@@ -387,16 +398,7 @@ h1 {
     display: block; 
 }
 /*--Video--*/
-.wthree_footer_copy {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    background-color:#04AA6D;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
-}
+
 /*--Thời Gian Biểu--*/
 .thoi-gian-bieu-container {
     background-color: whitesmoke;
@@ -526,17 +528,13 @@ h1 {
     text-align: center;
     padding: 20px;
 }
-
-/* CSS chung cho iframe */
 .iframe-container iframe {
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Hiệu ứng mờ dần và phóng to nhẹ */
-    opacity: 0.9 /* Trạng thái bình thường, mờ nhẹ */
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+    opacity: 0.9;
 }
 .iframe-container iframe:hover {
-    opacity: 1; /* Hiện rõ khi hover */
-    transform: scale(1.05); /* Phóng to nhẹ */
+    opacity: 1; 
+    transform: scale(1.05); 
 }
 /*--Food Tour--*/
-
-/*--Snow--*/
 
